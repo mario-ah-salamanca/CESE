@@ -1,0 +1,82 @@
+<html>
+
+<head>
+  <title>THE CHEMDUCK</title>
+  <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+  <script src = "autocomplete/autocomplete.js"></script>
+</head>
+
+
+<body>
+  <header id="header">
+    <script>
+      window.onscroll = () => {
+      const header = document.querySelector('#header');
+      const jub = document.querySelector('#jubLogo');
+      if(this.scrollY <= 10) {header.className = ''; jub.className = '';} else {header.className = 'scroll'; jub.className = 'scroll';}
+    };
+    </script>
+    <div class="imageWrapperHeader">
+      <img src="./assests/imgs/logo.png" alt="logo" align='left' style="width: 100;">
+      <img id="jubLogo" src="./assests/imgs/jub.png" alt="JUB logo" align="right" style="width: 200;">
+    </div>
+  </header>
+
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+
+
+  <h1 style="text-align: center;"><strong>Chemical Elements Search Engine</strong></h1>
+
+  <div class="wrap">
+      <div class="searchInputWrapper"> 
+        <input id="autocomplete" name="inputcomplete" class="searchInput" type="text" class="searchTerm" placeholder="What are you looking for?">
+        <div class="buttonWrapper"> 
+          <button type="submit" class="searchButton">
+            Search!
+          </button>
+        </div>
+      </div>
+  </div>
+
+
+
+
+  <div class="block" style="text-align: center;">&nbsp;</div>
+  <div class="block" style="text-align: center;">&nbsp;</div>
+  <div class = "container">
+  <table style="width:100%">
+    <tr>
+      <th>Element</th>
+      <th>IUPAC ID</th>
+      <th>Discovered By</th>
+    </tr>
+    <tr>
+  </table>
+</div>
+
+
+<link rel="stylesheet" href="css/main.css">
+  <footer>
+    <p><span style="text-decoration: underline; font-size: 14.72px;"><strong><span
+            style="left: 144.027px; top: 736.093px; font-family: sans-serif; transform: scaleX(0.796245);">Disclaimer:</span></strong></span>
+    </p>
+    <blockquote>
+      <p><em>"This website is student lab work and does not necessarily reflect Jacobs University Bremen opin-ions.
+          Jacobs
+          University Bremen does not endorse this site, nor is it checked by Jacobs University Bremen regularly, nor
+          is it part of theofficial Jacobs University Bremen web presence. For each external link existing on this
+          website, we initially have checked that the target page does not contain contents which is illegal wrt.
+          German jurisdiction. However, as we have no in-fluence on suchcontents, this may change without our notice.
+          Therefore we deny any responsib-ility for the websitesreferenced through our external linksfrom here. No
+          information conflicting with GDPRis stored in the server."</em></p>
+    </blockquote>
+    <li><a href="imprint.html"> Imprint </a></li>
+
+    <p>&nbsp;</p>
+  </footer>
+</body>
+
+</html>
